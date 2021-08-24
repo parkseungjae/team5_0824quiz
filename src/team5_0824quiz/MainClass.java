@@ -9,6 +9,7 @@ public class MainClass {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		MainClass mc = new MainClass();
+		SelectInfo si = new SelectInfo();
 		int mainNum = 0, viewNum = 0, manageNum = 0;
 
 		while(mainNum != 3) {
@@ -33,7 +34,7 @@ public class MainClass {
 
 					switch(viewNum) {
 					case 1 : // 학생 목록(All)
-						// 학생 목록(All) method 자리
+						si.displayAll(mc.arr);
 						break;
 					case 2 : // 특정학생 상세정보
 						// 특정학생 상세정보 method 자리
