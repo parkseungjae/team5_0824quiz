@@ -1,4 +1,4 @@
-package com.care.main;
+package team5_0824quiz;
 
 public class StudentInfo{
 	private String name, gender, addr;

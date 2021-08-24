@@ -1,11 +1,13 @@
-package com.care.main;
+package team5_0824quiz;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainClass {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		ArrayList<StudentInfo> arr = new ArrayList<StudentInfo>();
 		int mainNum = 0, viewNum = 0, manageNum = 0;
 		
 		while(mainNum != 3) {
