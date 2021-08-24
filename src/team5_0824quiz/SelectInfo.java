@@ -40,4 +40,11 @@ public class SelectInfo {
 			}
 		}
 	}
+
+	public void displayAll(ArrayList<StudentInfo> arr) {
+		for(int i=0; i<arr.size(); i++) {
+			StudentInfo str = arr.get(i);
+			System.out.println((i+1)+". "+str.getName());
+		}
+	}
 }

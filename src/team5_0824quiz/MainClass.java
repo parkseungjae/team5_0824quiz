@@ -34,7 +34,7 @@ public class MainClass {
 
 					switch(viewNum) {
 					case 1 : // 학생 목록(All)
-						// 학생 목록(All) method 자리
+						si.displayAll(mc.arr);
 						break;
 					case 2 : // 특정학생 상세정보
 						si.displayStInfo(mc.arr);
