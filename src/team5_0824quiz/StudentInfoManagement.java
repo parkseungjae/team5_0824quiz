@@ -106,7 +106,23 @@ public class StudentInfoManagement {
 		}
 	}
 
-	public void delete() {
-		
+	public ArrayList<StudentInfo> delete(ArrayList<StudentInfo> arr) {
+		String name;
+
+		System.out.println("학생정보 삭제");
+		System.out.println("삭제할 학생이름 입력 : ");
+		name = sc.next();
+		for(int i = 0; i<arr.size(); i ++) {
+			StudentInfo sss = arr.get(i);
+			if(name.equals(sss.getName())){
+				arr.remove(i);
+				return arr;
+			}
+			 
+
+
+		}
+		return arr;
+
 	}
 }

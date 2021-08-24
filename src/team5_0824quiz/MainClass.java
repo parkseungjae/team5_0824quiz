@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class MainClass {
 	ArrayList<StudentInfo> arr = new ArrayList<StudentInfo>();
-
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		MainClass mc = new MainClass();
@@ -66,7 +66,12 @@ public class MainClass {
 						sim.edit(mc.arr);
 						break;
 					case 3 : // 학생정보 삭제
+						
 						// 학생정보 삭제 method 자리
+						mc.arr = sim.delete(mc.arr);
+						
+						
+						
 						break;
 					case 4 :
 						System.out.println("Page를 나갑니다.\n");
