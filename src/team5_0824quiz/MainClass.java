@@ -37,7 +37,7 @@ public class MainClass {
 						si.displayAll(mc.arr);
 						break;
 					case 2 : // 특정학생 상세정보
-						// 특정학생 상세정보 method 자리
+						si.displayStInfo(mc.arr);
 						break;
 					case 3 :
 						System.out.println("Page를 나갑니다.\n");
