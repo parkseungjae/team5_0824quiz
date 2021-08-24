@@ -102,6 +102,8 @@ public class StudentInfoManagement {
 					System.out.println("잘못 입력되었습니다.\n");
 				}
 				break;
+			}else {
+				System.out.println("등록된 학생이 아닙니다.\n");
 			}
 		}
 	}
@@ -109,20 +111,17 @@ public class StudentInfoManagement {
 	public ArrayList<StudentInfo> delete(ArrayList<StudentInfo> arr) {
 		String name;
 
-		System.out.println("학생정보 삭제");
-		System.out.println("삭제할 학생이름 입력 : ");
+		System.out.print("삭제할 학생이름 입력 : ");
 		name = sc.next();
 		for(int i = 0; i<arr.size(); i ++) {
 			StudentInfo sss = arr.get(i);
 			if(name.equals(sss.getName())){
 				arr.remove(i);
+				System.out.println("삭제가 완료되었습니다.\n");
 				return arr;
 			}
-			 
-
-
 		}
+		System.out.println("등록된 학생이 아닙니다.\n");
 		return arr;
-
 	}
 }
