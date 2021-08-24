@@ -1,14 +1,10 @@
 package team5_0824quiz;
 
-import java.util.ArrayList;
-
 public class StudentInfo{
-	
-	
 	private String name, gender, addr;
 	private int age;
 	private int kor, eng, math, sum, avg;
-	
+
 	public String getName() {
 		return name;
 	}
