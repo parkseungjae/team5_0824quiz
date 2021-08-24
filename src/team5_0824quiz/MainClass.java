@@ -48,6 +48,7 @@ public class MainClass {
 				}
 				break;
 			case 2 : // 학생정보 관리 Page
+				StudentInfoManagement sim = new StudentInfoManagement();
 				while(mainNum != 4) {
 					System.out.println("== 학생정보 관리 Page ==");
 					System.out.println("1. 학생정보 등록");
@@ -60,7 +61,19 @@ public class MainClass {
 					
 					switch(mainNum) {
 					case 1 : // 학생정보 등록
+						
+						arr.add(sim.register());
 						// 학생정보 등록 method 자리
+						for(int i = 0; i < arr.size(); i++) {
+		                    StudentInfo ss = arr.get(i);
+		                    System.out.println("이름 : " + ss.getName());
+		                    System.out.println("성별 : " + ss.getGender());
+		                    System.out.println("주소 : " + ss.getAddr());
+		                    System.out.println("나이 : " + ss.getAge());
+		                    System.out.println("국어 : " + ss.getKor());
+		                    System.out.println("영어 : " + ss.getEng());
+		                    System.out.println("수학 : " + ss.getMath());
+		                }
 						System.out.println();
 						break;
 					case 2 : // 학생정보 수정
